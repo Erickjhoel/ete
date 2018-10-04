@@ -4,11 +4,10 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 04-oct-2018, 19:48:51
+    Created on : 04-oct-2018, 20:55:30
     Author     : A
 */
-
-.titulo{
+.titulomultimedia{
     text-align: center;
     font-family: cursive;
     font-size:50px;
@@ -16,19 +15,13 @@ and open the template in the editor.
     border-color: #009999;
     margin-bottom: 1%;
 }
-.contMenu{
-    display: flex;
-    font-family: cursive;
-    flex-direction: row;
-     border:solid 3px;
-    border-color: #009999;    
-    
+.fila{
+    border:solid red;
+    display:flex;
 }
-.obmenu{
-    border-right: solid 3px;
-    border-color: #009999; 
-    padding: 1%;
+.columnaiz{
+    width: 50%;
 }
-a:link{
- text-decoration: none;
+.coumnade{
+    width: 50%;
 }
