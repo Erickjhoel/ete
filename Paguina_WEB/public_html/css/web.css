@@ -8,15 +8,29 @@ and open the template in the editor.
     Author     : Daw2
 */
 
+a:link{
+ text-decoration: none;
+ color:white;
+}
 .tit{
     text-align: center;
     font-family: cursive;
     font-size: 50px;
+    border: dotted #ff6600;
 }
 .menu{
-    background-color: #ff6633;
+    background-color: #666666;
+    display: flex;
+    margin-bottom: 1%;
+    margin-right: 5%;
+   margin-left: 5%;
+    
 }
 .opcion{
+    border-right: solid 3px;
+    border-color: black;
     font-family: cursive;
     font-size: 20px;
+    padding: 1%;
+    
 }
