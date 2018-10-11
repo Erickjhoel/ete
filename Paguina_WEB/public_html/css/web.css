@@ -12,13 +12,25 @@ a:link{
  text-decoration: none;
  color:white;
 }
-.tit{
+
+.imag{
+    background: url(../img/6_original.JPG) repeat center;
     text-align: center;
+    color:red;
     font-family: cursive;
     font-size: 50px;
-    border: dotted #ff6600;
+    border: solid #ff6600 5px;
+    width: 99%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.menu{
+.tit{
+    -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari */
+    transform: rotate(-12deg); /* Standard syntax */
+}.menu{
     background-color: #666666;
     display: flex;
     margin-bottom: 1%;
