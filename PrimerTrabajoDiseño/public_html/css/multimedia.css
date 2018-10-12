@@ -16,16 +16,24 @@ and open the template in the editor.
     margin-bottom: 1%;
 }
 .fila{
-    border:solid red;
     display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .columnaiz{
     width: 50%;
 }
 .coumnade{
     width: 50%;
-    
 }
 .im{
     width: 100%;
+}
+video {
+    width: 100%;
+    height: auto;
+}
+audio{
+    width: 100%;
+    height: 100%;
 }
