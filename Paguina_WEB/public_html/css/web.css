@@ -25,6 +25,7 @@ a:link{
     align-items: center;
 }
 .tit{
+    
     width: 100%;
 /*    transform: rotate(-5deg);  Standard syntax */
     text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px darkblue;
@@ -60,12 +61,14 @@ a:link{
 }
 .grandote{
     display: flex;
-    border:solid 5px;
-    height: 1000px;
+/*    border:solid 5px;*/
 }
 .menuReal{
+    margin-top: 1%;
     display: flex;
     flex-direction:column;
+    background: black;    
+    border-radius: 15px;
 }
 .opMen{
     margin: 1%;
@@ -87,7 +90,6 @@ a:link{
     background-image: radial-gradient(white, #cccccc, #333333);
    
 }
-
 
 
 

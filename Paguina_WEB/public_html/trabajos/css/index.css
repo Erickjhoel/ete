@@ -23,15 +23,16 @@ body{
     border-radius: 15px ;
     display: flex;
     font-family: cursive;
-    flex-direction: row;
-     border:solid 3px;
-    border-color: #009999;    
+    flex-direction: row; 
     
 }
 .obmenu{
-    border-right: solid 3px;
+    border-radius: 15px ;
+    width: auto;
+    border: solid 3px;
     border-color: #009999; 
     padding: 1%;
+    margin: 1%;
 }
 a:link{
  text-decoration: none;
