@@ -53,8 +53,6 @@ a:link{
     justify-content: flex-end;
 }
 .opcion{
-    border-right: solid 3px;
-    border-color: black;
     font-family: cursive;
     font-size: 20px;
     padding: 1%;
@@ -66,14 +64,29 @@ a:link{
     height: 1000px;
 }
 .menuReal{
-    border:solid red;
     display: flex;
     flex-direction:column;
 }
 .opMen{
-    border:solid green;
+    margin: 1%;
 }
-
+.button{
+    width: 100%;
+    border-radius: 15px;
+    background-color: white; /* Green */
+    color: black;
+    border: solid #333333;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button:hover {
+    background-image: radial-gradient(white, #cccccc, #333333);
+   
+}
 
 
 
