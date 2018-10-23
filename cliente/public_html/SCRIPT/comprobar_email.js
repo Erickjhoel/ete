@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-
+//ESTA MALLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
 var mi_cadenaLetra =prompt("Introduce Letra  DNI", "");
 var plantilla =/^(\w+\.){0,3}\w{15}@(\w{1,20}\.){1,2}\w{2,4}$/;
 
