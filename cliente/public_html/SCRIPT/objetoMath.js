@@ -15,22 +15,25 @@
 //var numAl=Math.floor((Math.random() * numTotal+1) + numin);
 //document.write("numero aleatorio: "+numAl+"<br />");
 
-document.write("Programa que muestre valores del 0 al 12");
+document.write("Programa que muestre valores del 0 al 10");
 var FechaIni;
- var msIni ;
- var miTimer;
-var horin;
-var minin ;
-var segin;
-function Cronometro() {
-    var FechaAct = new Date();
-    var tiempo = Math.round((FechaAct.getTime() - msIni) / 1000);
-    document.title=tiempo;
+var miTimer;
+var num = 0;
+var cont=10;
+function tiempo() {
+    if (num <cont) {
+        num++;
+        document.title = "num:" + num;
+        cont=10;
+    } else {
+        num--;
+        document.title = "num:" + num;
+        cont=1;
+    }
+
 }
 function PararCronometro() {
    clearInterval(miTimer);
 }
-function IniciarCronometro(){
-    FechaIni = new Date();
-    miTimer = setInterval ("Cronometro()", 5000);
-}
+FechaIni = new Date();
+miTimer = setInterval("tiempo()", 500);
