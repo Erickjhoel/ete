@@ -25,15 +25,14 @@ a:link{
     align-items: center;
 }
 .tit{
-    
-    width: 100%;
 /*    transform: rotate(-5deg);  Standard syntax */
-    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px darkblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
     text-align: center;
     font-family: 'Cinzel', serif;
     /*    font-family: 'Special Elite', cursive;*/
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 900;
+    background-image: radial-gradient(black, darkred, #cc0000);
 }.menu{
     display: flex;
     align-items: center;
@@ -61,6 +60,7 @@ a:link{
 }
 .grandote{
     display: flex;
+    flex-direction: row;
 /*    border:solid 5px;*/
 }
 .menuReal{
@@ -90,9 +90,28 @@ a:link{
     background-image: radial-gradient(white, #cccccc, #333333);
    
 }
+.derech{
+    border:solid black;
+}
+.centro{
+    
+}
 
-
-
+/*probar para moviles
+.grandote::after {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+}*/
+/*para cuando pasa a visualizarse como un movil*/
+[class*="col-"]{
+    float: left;
+    width: 100%;
+}
+/*[class*="grandote"]{
+   display:flex;
+   flex-direction: column;
+}*/
 
 
 
