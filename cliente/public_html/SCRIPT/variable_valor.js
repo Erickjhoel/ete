@@ -17,7 +17,7 @@ do {
     cadena[contador] = "?" + variable[contador] + "=" + valor[contador];
     contador++;
 } while (confirm("Desea introducir mas variables???"));
-
+//sobra un for
 for (var i = 0; i < contador; i++) {
     for (var e = 0; e <cadena.length; e++) {
         cadena_Fin[i]=cadena[e];
