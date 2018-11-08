@@ -4,28 +4,30 @@
  * and open the template in the editor.
  */
 var url;
-var cadena = new Array();
 var variable = new Array();
 var valor = new Array();
 var contador = 0;
-var cadena_Fin= new Array();
-var urlFin;
+var cadena_Fin;
 do {
     variable[contador] = prompt("Introduzca nombre de variable");
     valor[contador] = prompt("Introduzca valor de variable introducida");
     url = location.href;
-    cadena[contador] = "?" + variable[contador] + "=" + valor[contador];
     contador++;
 } while (confirm("Desea introducir mas variables???"));
 //sobra un for
 for (var i = 0; i < contador; i++) {
-    for (var e = 0; e <cadena.length; e++) {
-        cadena_Fin[i]=cadena[e];
+    if(i===0){
+        cadena_Fin="?"+variable[i]+"="+valor[i];
+    }else{
+        cadena_Fin=cadena_Fin+"&&"+variable[i]+"="+valor[i];
     }
 }
-for (var e = 0; e <cadena_Fin.length; e++) {
-       urlFin=cadena_Fin[e];
-       urlFin=urlFin+"&&"+cadena_Fin[e];
-    }
 
-document.write(url+urlFin);
+document.write(url+cadena_Fin+"<br />");
+
+
+var subcadenas= cadena_Fin.split("&&");
+for (var i = 0; i < subcadenas.length; i++) {
+    var partes=subcadenas[i].split("=");
+    document.write(partes[0]+"**"+partes[1]+"<br />");
+}
