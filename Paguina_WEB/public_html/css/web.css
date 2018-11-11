@@ -8,7 +8,9 @@ and open the template in the editor.
     Author     : Daw2
 */
 
-
+body{
+    background-color: #cccccc;
+}
 .imag{
     border-radius: 15px ;
     background: url(../img/12_original.JPG)  no-repeat center ;
@@ -146,7 +148,6 @@ and open the template in the editor.
       justify-content: flex-start;
 }
 .derech{
-    border:solid black;
     display: flex;
     flex-direction:column;
 }
@@ -156,7 +157,7 @@ and open the template in the editor.
     margin-bottom: 2%;
 }
 .centro{
-    border:solid red;
+    
 }
 
 /* For desktop: */
