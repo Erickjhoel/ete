@@ -4,20 +4,23 @@
  * and open the template in the editor.
  */
 
-var nombreCookie=prompt("Introduzca nombre de cookie");
-var valorCookie=prompt("Introduzca el valor de la cookie");
-
-
-
-
-function AsignarCoockie(nombre, valor){
-    document.cookie=nombre+"="+valor;
+var nombre="contador";
+var valor=5;
+function AsignarCoockie(nombre,valor) {
+    document.cookie =nombre+"="+escape(valor);
 }
 
-function LeerCoockie(nombre){
-     
+function LeerCoockie(nombre) {
+    var lista = document.cookie.split(";");
+    for (var i=0; i<lista.length;i++) {
+        cookie= lista[i].split("=");
+        if (cookie[0]===nombre){
+            return cookie[1];
+        }
+    }
 }
 
 
-AsignarCoockie(nombreCookie,valorCookie);
-LeerCoockie(nombreCookie);
+AsignarCoockie(nombre,valor);
+var coockie=LeerCoockie(nombre);
+document.write(nombre+" = " +coockie);
