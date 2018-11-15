@@ -55,33 +55,63 @@ and open the template in the editor.
 
                     </form> 
                 </div>
-                <iframe class="col-12 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.757743753542!2d-3.6974261486007043!3d40.369895679269305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226cdfefd6c59%3A0x5c599da87d0d06ff!2sIES+Enrique+Tierno+Galv%C3%A1n!5e0!3m2!1ses!2ses!4v1540792216357"
+                <iframe class="col-12 map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.757743753542!2d-3.6974261486007043!3d40.369895679269305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226cdfefd6c59%3A0x5c599da87d0d06ff!2sIES+Enrique+Tierno+Galv%C3%A1n!5e0!3m2!1ses!2ses!4v1540792216357"
                         height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
 
         <div class="col-12 carrusel">
-            <div style="max-width:200px">
-                <img class="fotos" src="img/a.jpg" style="width:100%">
-                <img class="fotos" src="img/2.JPG" style="width:100%">
-                <img class="fotos" src="img/foto1.jpg" style="width:100%">
+            <div class="col-4">
+                <img class="col-12 fotos" src="img/a.jpg">
+                <img class="col-12 fotos" src="img/2.JPG">
+                <img class="col-12 fotos" src="img/foto1.jpg">
+            </div>
+            <div class="col-4">             
+                <img class="col-12 fotos2" src="img/2.JPG">
+                <img class="col-12 fotos2" src="img/foto1.jpg">
+                <img class="col-12 fotos2" src="img/a.jpg">
+            </div>
+            <div class="col-4">             
+                <img class="col-12 fotos3" src="img/foto1.jpg">
+                <img class="col-12 fotos3" src="img/a.jpg">
+                <img class="col-12 fotos3" src="img/2.JPG">
             </div>
             <script>
                 var myIndex = 0;
+                var myIndey = 0;
+                var myIndez = 0;
                 carousel();
 
                 function carousel() {
                     var i;
                     var x = document.getElementsByClassName("fotos");
+                    var y=document.getElementsByClassName("fotos2");
+                    var z=document.getElementsByClassName("fotos3");
                     for (i = 0; i < x.length; i++) {
                         x[i].style.display = "none";
                     }
+                    for (i = 0; i < y.length; i++) {
+                        y[i].style.display = "none";
+                    }
+                    for (i = 0; i < z.length; i++) {
+                        z[i].style.display = "none";
+                    }
                     myIndex++;
+                    myIndey++;
+                    myIndez++;
                     if (myIndex > x.length) {
                         myIndex = 1;
                     }
+                    if (myIndey > y.length) {
+                        myIndey = 1;
+                    }
+                    if (myIndey > z.length) {
+                        myIndez = 1;
+                    }
                     x[myIndex - 1].style.display = "block";
-                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                    y[myIndey - 1].style.display = "block";
+                    z[myIndey - 1].style.display = "block";
+                    setTimeout(carousel, 3000); // Change image every 2 seconds
                 }
             </script>
         </div>

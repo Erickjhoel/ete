@@ -23,7 +23,7 @@ body{
     align-items: center;
 }
 .tit{
-/*    transform: rotate(-5deg);  Standard syntax */
+    /*    transform: rotate(-5deg);  Standard syntax */
     text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
     text-align: center;
     font-family: 'Cinzel', serif;
@@ -38,7 +38,7 @@ body{
     /*     background-image: linear-gradient(black, red);*/
     background-image: radial-gradient(white, #999999, #333333);
     margin-bottom: 1%;
-    
+
 }
 .iz{
     display: flex;
@@ -65,8 +65,8 @@ body{
     display: flex;
     flex-direction: row;
     margin-top: 1%;
-    
-/*    border:solid 5px;*/
+
+    /*    border:solid 5px;*/
 }
 .ete{
     display: flex;
@@ -96,7 +96,7 @@ body{
 }
 .button:hover {
     background-image: radial-gradient(white, #cccccc, #333333);
-   
+
 }
 .eleg{
     width: 35%;
@@ -127,7 +127,7 @@ body{
     padding: 5%;
     color: black; 
     border: 2px solid #33ccff;
-    
+
 }
 .eleg2:hover {
     border-radius: 15px 35px;
@@ -150,32 +150,50 @@ body{
     justify-content: flex-end;
 }
 .Eso{
-     display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 .Gs{
     display: flex;
-      justify-content: flex-start;
+    justify-content: flex-start;
 }
 .derech{
     display: flex;
-     border-radius: 15px;
-     background-color: #cccccc;
+    border-radius: 15px;
+    background-color: #cccccc;
     flex-direction:column;
+}
+.map{
+    margin-left: 3%;
 }
 .usuContra{
     display:flex;
-     justify-content: center;
+    justify-content: center;
     margin-bottom: 2%;
 }
 .centro{
     border-radius: 15px;
-      background-color: white;
+    background-color: white;
+    margin-left: 1%;
 }
 .carrusel{
-    border:solid;
+    margin-top: 1%;
     display:flex;
     flex-direction: row;
+}
+.fotos{
+    height: 250px;
+    max-height: 250px;
+}
+.fotos2{
+     filter: blur(2px);
+    height: 250px;
+    max-height: 250px;
+}
+.fotos3{
+   filter: blur(8px);
+    height: 250px;
+    max-height: 250px;
 }
 
 /* For desktop: */
