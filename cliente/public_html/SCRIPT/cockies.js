@@ -5,12 +5,25 @@
  */
 
 var nombre="contador";
-var valor=5;
-function AsignarCoockie(nombre,valor) {
-    document.cookie =nombre+"="+escape(valor);
+var valor=LeerCoockie(nombre);
+valor= ParseInt(valor);
+if(valor===null){
+    x=1;
+}else{
+    x=x+1;
 }
 
-function LeerCoockie(nombre) {
+AsignarCoockie(nombre,valor);
+document.write(nombre+" = " +coockie);
+
+function AsignarCoockie(nombre,valor) {
+    document.cookie =nombre+"="+valor;
+}
+
+function LeerCoockie(nombre) {      
+    if(document.cookie.length===null){
+        return null;
+    }
     var lista = document.cookie.split(";");
     for (var i=0; i<lista.length;i++) {
         cookie= lista[i].split("=");
@@ -21,6 +34,4 @@ function LeerCoockie(nombre) {
 }
 
 
-AsignarCoockie(nombre,valor);
-var coockie=LeerCoockie(nombre);
-document.write(nombre+" = " +coockie);
+
