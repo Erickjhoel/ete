@@ -12,12 +12,13 @@ and open the template in the editor.
         <link href="css/web.css" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+
     </head>
     <body>
         <!--*************************probar la verga esta con dos dib flex al 50% a ver si funciona*******************************-->
         <div class="menu">
             <div class="iz">
-                <img class="ana" src="img/Anagrama.png" alt=""/>
+                <img class="ana" src="img/logo.gif" alt=""/>
             </div>
             <div class="de">
                 <div class="opcion" >Av. de Andalucía, 28041 Madrid</div>
@@ -43,7 +44,7 @@ and open the template in the editor.
                 <div class="opMen Gm"><button  onclick="location.href = 'obsionmenu.html'" class="eleg eleg1">Grado medio</button></div>
                 <div class="opMen Eso"><button  onclick="location.href = 'obsionmenu.html'" class="eleg eleg2">ESO</button></div>
                 <div class="opMen Gs"><button  onclick="location.href = 'obsionmenu.html'" class="eleg eleg3">Grado superior</button></div>
-                <br />anagrama gif
+                <br />
             </div>
             <div class="col-3 derech">
                 <div class="col-12 usuContra">
@@ -59,5 +60,31 @@ and open the template in the editor.
             </div>
         </div>
 
+        <div class="col-12 carrusel">
+            <div style="max-width:200px">
+                <img class="fotos" src="img/a.jpg" style="width:100%">
+                <img class="fotos" src="img/2.JPG" style="width:100%">
+                <img class="fotos" src="img/foto1.jpg" style="width:100%">
+            </div>
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("fotos");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {
+                        myIndex = 1;
+                    }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+            </script>
+        </div>
     </body>
+
 </html>

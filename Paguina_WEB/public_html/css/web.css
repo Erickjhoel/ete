@@ -45,6 +45,7 @@ body{
     width: 50%;
 }
 .ana{
+    width: 15%;
     height: 50px;
 }
 .de{
@@ -60,10 +61,16 @@ body{
 
 }
 .grandote{
+    border-radius: 15px;
     display: flex;
     flex-direction: row;
     margin-top: 1%;
+    
 /*    border:solid 5px;*/
+}
+.ete{
+    display: flex;
+    flex-direction: row;
 }
 .menuReal{
     display: flex;
@@ -111,6 +118,7 @@ body{
     border: 2px solid #ffcc00;
 }
 .eleg1:hover {
+    border-radius: 15px 35px;
     background-color: white;
     color: #ffcc00;
 }
@@ -122,6 +130,7 @@ body{
     
 }
 .eleg2:hover {
+    border-radius: 15px 35px;
     background-color: white;
     color: #33ccff;
 }
@@ -132,6 +141,7 @@ body{
     border: 2px solid #ff0033;
 }
 .eleg3:hover {
+    border-radius: 15px 35px;
     background-color: white;
     color: #ff0033;
 }
@@ -149,6 +159,8 @@ body{
 }
 .derech{
     display: flex;
+     border-radius: 15px;
+     background-color: #cccccc;
     flex-direction:column;
 }
 .usuContra{
@@ -157,7 +169,13 @@ body{
     margin-bottom: 2%;
 }
 .centro{
-    
+    border-radius: 15px;
+      background-color: white;
+}
+.carrusel{
+    border:solid;
+    display:flex;
+    flex-direction: row;
 }
 
 /* For desktop: */
