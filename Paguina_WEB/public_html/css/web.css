@@ -117,7 +117,7 @@ body{
     border: 2px solid #ffcc00;
 }
 .eleg1:hover {
-    border-radius: 15px 35px;
+    border-radius: 15px 50px;
     background-color: white;
     color: #ffcc00;
 }
@@ -129,7 +129,7 @@ body{
 
 }
 .eleg2:hover {
-    border-radius: 15px 35px;
+    border-radius: 15px 50px;
     background-color: white;
     color: #33ccff;
 }
@@ -140,7 +140,7 @@ body{
     border: 2px solid #ff0033;
 }
 .eleg3:hover {
-    border-radius: 15px 35px;
+    border-radius: 15px 50px;
     background-color: white;
     color: #ff0033;
 }
@@ -162,9 +162,6 @@ body{
     background-color: #cccccc;
     flex-direction:column;
 }
-.map{
-    margin-left: 3%;
-}
 .usuContra{
     display:flex;
     justify-content: center;
@@ -181,8 +178,12 @@ body{
     flex-direction: row;
 }
 .carrDentro{
+     margin-left: 1%;
     display:flex;
-    flex-direction: row;
+    flex-direction  : row;
+}
+.conFot{
+    margin-right: 1%;
 }
 .fotos{
     height: 150px;
