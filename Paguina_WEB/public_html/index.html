@@ -61,59 +61,81 @@ and open the template in the editor.
         </div>
 
         <div class="col-12 carrusel">
-            <div class="col-4">
-                <img class="col-12 fotos" src="img/a.jpg">
-                <img class="col-12 fotos" src="img/2.JPG">
-                <img class="col-12 fotos" src="img/foto1.jpg">
-            </div>
-            <div class="col-4">             
-                <img class="col-12 fotos2" src="img/2.JPG">
-                <img class="col-12 fotos2" src="img/foto1.jpg">
-                <img class="col-12 fotos2" src="img/a.jpg">
-            </div>
-            <div class="col-4">             
-                <img class="col-12 fotos3" src="img/foto1.jpg">
-                <img class="col-12 fotos3" src="img/a.jpg">
-                <img class="col-12 fotos3" src="img/2.JPG">
-            </div>
-            <script>
-                var myIndex = 0;
-                var myIndey = 0;
-                var myIndez = 0;
-                carousel();
+            <div class="col-2"></div>
+            <div class="col-7 carrDentro">
+                <div class="col-3">
+                    <img class="col-12 fotos" src="img/a.jpg">
+                    <img class="col-12 fotos" src="img/2.JPG">
+                    <img class="col-12 fotos" src="img/foto1.jpg">
+                    <img class="col-12 fotos" src="img/erasmus.PNG"/>
+                </div>
+                <div class="col-3">             
+                    <img class="col-12 fotos2" src="img/2.JPG">
+                    <img class="col-12 fotos2" src="img/foto1.jpg">
+                    <img class="col-12 fotos2" src="img/erasmus.PNG"/>
+                    <img class="col-12 fotos2" src="img/a.jpg">
+                </div>
+                <div class="col-3">             
+                    <img class="col-12 fotos3" src="img/foto1.jpg">
+                    <img class="col-12 fotos3" src="img/erasmus.PNG"/>
+                    <img class="col-12 fotos3" src="img/a.jpg">
+                    <img class="col-12 fotos3" src="img/2.JPG">
+                </div>
+                <div class="col-3">             
+                    <img class="col-12 fotos4" src="img/erasmus.PNG"/>
+                    <img class="col-12 fotos4" src="img/a.jpg">
+                    <img class="col-12 fotos4" src="img/2.JPG">
+                    <img class="col-12 fotos4" src="img/foto1.jpg">
+                </div>
+                <script>
+                    var myIndex = 0;
+                    var myIndey = 0;
+                    var myIndez = 0;
+                    var myIndew = 0;
+                    carousel();
 
-                function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("fotos");
-                    var y=document.getElementsByClassName("fotos2");
-                    var z=document.getElementsByClassName("fotos3");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("fotos");
+                        var y = document.getElementsByClassName("fotos2");
+                        var z = document.getElementsByClassName("fotos3");
+                        var w = document.getElementsByClassName("fotos4");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        for (i = 0; i < y.length; i++) {
+                            y[i].style.display = "none";
+                        }
+                        for (i = 0; i < z.length; i++) {
+                            z[i].style.display = "none";
+                        }
+                        for (i = 0; i < w.length; i++) {
+                            w[i].style.display = "none";
+                        }
+                        myIndex++;
+                        myIndey++;
+                        myIndez++;
+                        myIndew++;
+                        if (myIndex > x.length) {
+                            myIndex = 1;
+                        }
+                        if (myIndey > y.length) {
+                            myIndey = 1;
+                        }
+                        if (myIndey > z.length) {
+                            myIndez = 1;
+                        }
+                        if (myIndew > z.length) {
+                            myIndew = 1;
+                        }
+                        x[myIndex - 1].style.display = "block";
+                        y[myIndey - 1].style.display = "block";
+                        z[myIndey - 1].style.display = "block";
+                        w[myIndew - 1].style.display = "block";
+                        setTimeout(carousel, 6000); // Change image every 2 seconds
                     }
-                    for (i = 0; i < y.length; i++) {
-                        y[i].style.display = "none";
-                    }
-                    for (i = 0; i < z.length; i++) {
-                        z[i].style.display = "none";
-                    }
-                    myIndex++;
-                    myIndey++;
-                    myIndez++;
-                    if (myIndex > x.length) {
-                        myIndex = 1;
-                    }
-                    if (myIndey > y.length) {
-                        myIndey = 1;
-                    }
-                    if (myIndey > z.length) {
-                        myIndez = 1;
-                    }
-                    x[myIndex - 1].style.display = "block";
-                    y[myIndey - 1].style.display = "block";
-                    z[myIndey - 1].style.display = "block";
-                    setTimeout(carousel, 3000); // Change image every 2 seconds
-                }
-            </script>
+                </script>
+            </div>
         </div>
     </body>
 
