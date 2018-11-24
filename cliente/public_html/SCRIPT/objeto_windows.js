@@ -7,10 +7,10 @@
 //// var ventana;
 //// var ancho;
 //// var alto;
-//function abrirHija()
-//{
-//  miVentana = window.open('hija.html', "Ventana hija","width=500, height=200");
-//}
+function abrirHija()
+{
+ window.open('hija.html', "Ventana hija","width=500, height=200");
+}
 //function cerrarHija(){
 //    window.close(href="hija.html");//para cerar hija desde ella mismo
 //    miVentana.close();//cierra hija desde padre
