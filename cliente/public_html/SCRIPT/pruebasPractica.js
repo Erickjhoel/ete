@@ -64,8 +64,54 @@ document.write("++++++++++", milifin, "<br />");
 //
 var numAl=Math.floor((Math.random() * milifin+1)+ mi_fecha_ini.getTime());
 
+var Fecha = new Date();
+Fecha.setTime(numAl);
+document.write("++++++++++", numAl, "<br />");
+document.write("Fecha aleatoria", Fecha, "<br />");
 document.write("++++++++++", numAl, "<br />");
 document.write("mes**", mes[mi_fecha_ini.getMonth()], "<br />");
 document.write("dia**", dias[mi_fecha_ini.getDay()], "<br />");
 document.write("dia num**", mi_fecha_ini.getDate(), "<br />");
 document.write("Año**", mi_fecha_ini.getFullYear(), "<br />");
+
+document.write("++++++++++++++++++++++++++++++++++++++++++++ Expresiondes regulares <br />");
+
+var cadena=("+4,99");
+var plantilla= /^[+-]?[0-9]{1,}([.,]?[0-9]{1,})?/g ;
+if (plantilla.test(cadena)){
+    document.write("decimal");
+}else{
+    document.write("no decimal");
+}
+var cadena2=("03189718 D");
+var plantilla2= /^[0-7][0-9]{7}([-]|\s[A-Z])/g ;
+if (plantilla2.test(cadena2)){
+    document.write("dni <br />");
+}else{
+    document.write("no dni <br />");
+}
+document.write("++++++++++++++++++++++++++++++++++++++++++++ ordenar <br />");
+var tabla =new Array (8,4,18,1,9,23,45,5);
+document.write("numero desordenado");
+for ( e=0;e< tabla.length; e++) {
+    document.write("(",tabla[e],")");
+}
+var aux=0;
+var condicion = false;
+do{
+    condicion=false;
+    for (var i = 0; i < tabla.length-1; i++) {
+      if( tabla[i]>tabla[i+1]){
+          aux=tabla[i];
+          tabla[i]=tabla[i+1];
+          tabla[i+1]=aux;
+          condicion=true;
+      }
+    }
+}while(condicion);
+document.write("numero ordenado");
+for ( t=0;t< tabla.length; t++) {
+    document.write("(",tabla[t],")");
+}
+document.write("<br />");
+document.write("++++++++++++++++++++++++++++++++++++++++++++ objetos <br />");

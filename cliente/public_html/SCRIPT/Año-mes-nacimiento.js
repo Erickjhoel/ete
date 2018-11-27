@@ -19,7 +19,7 @@ for (var i = 0; i < 18; i++) {
 }
 var salir = false;
 do {
-    var mi_mes = parseInt(prompt("Introduce MES", 0));
+    var mi_mes = parseInt(prompt("Introduce  MES", 0));
     if (mi_mes > 12 || mi_mes < 1) {
         alert("error");
     } else {
