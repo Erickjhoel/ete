@@ -22,11 +22,9 @@ body{
     align-items: center;
 }
 .tit{
-    /*    transform: rotate(-5deg);  Standard syntax */
     text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
     text-align: center;
     font-family: 'Cinzel', serif;
-    /*    font-family: 'Special Elite', cursive;*/
     font-size: 40px;
     font-weight: 900;
     background-image: radial-gradient(black, darkred, #cc0000);
@@ -35,7 +33,6 @@ body{
     display: flex;
     align-items: center;
     border-radius: 15px;
-    /*     background-image: linear-gradient(black, red);*/
     background-image: radial-gradient(white, #999999, #333333);
     margin-bottom: 1%;
 
@@ -90,7 +87,7 @@ body{
     padding: 10px;
     text-align: center;
     font-size: 16px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
     cursor: pointer;
 }
