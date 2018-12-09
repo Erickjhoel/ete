@@ -15,7 +15,6 @@ body{
     border-radius: 15px ;
     background: url(../img/12_original.JPG)  no-repeat center ;
     background-size:cover;
-    /*    background-size: 1000px 300px;*/
     color: white;
     height: 150px;
     display: flex;
@@ -28,7 +27,7 @@ body{
     text-align: center;
     font-family: 'Cinzel', serif;
     /*    font-family: 'Special Elite', cursive;*/
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 900;
     background-image: radial-gradient(black, darkred, #cc0000);
 }
@@ -100,13 +99,14 @@ body{
 
 }
 .eleg{
+    font-family: cursive;
     width: 35%;
     border-radius: 15px;
     color: black;
     border: solid #333333;
     padding: 10px;
     text-align: center;
-    font-size: 16px;
+    font-size: 30px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
