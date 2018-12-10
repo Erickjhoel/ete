@@ -6,86 +6,73 @@ and open the template in the editor.
 -->
 <html lang="es">
     <head>
-        <title>TODO supply a title</title>
+        <title>IES Enrique Tierno Galvan</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/web.css" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
-
+        <link href="ficherosBoostrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="ficherosBoostrap/js/bootstrap.min.js" type="text/javascript"></script>
     </head>
     <body>
-        <div class="menu">
-            <div class="iz">
-                <img class="ana" src="img/logo.gif" alt=""/>
-            </div>
-            <div class="de">
-                <div class="opcion" >Av. de Andalucía, 28041 Madrid</div>
-            </div>
+        <div class="d-flex flex-row-reverse bg-info text-white" >
+            Av. de Andalucía, 28041 Madrid.
         </div>
-        <div class="col-12 imag">
-            <div class="col-12 tit">IES Enrique Tierno Galvan</div>
+
+        <div class="jumbotron text-center">
+            <h1>IES Enrique Tierno Galvan</h1>
         </div>
-        <div class="col-12 grandote">
-            <div class="col-2 menuReal">
-                <div class="opMen"><button  onclick="location.href = 'trabajos/index.html'" class="button">Trabajos</button></div>
-                <div class="opMen"><button  onclick="location.href = 'obsionmenu.html'" class="button">Inicio</button></div>
-                <div class="opMen"><button  onclick="location.href = 'obsionmenu.html'" class="button">Jefatura</button></div>
-                <div class="opMen"><button  onclick="location.href = 'obsionmenu.html'" class="button">Administración</button></div>
-                <div class="opMen"><button  onclick="location.href = 'obsionmenu.html'" class="button">Departamentos</button></div>
-                <div class="opMen"><button  onclick="location.href = 'obsionmenu.html'" class="button">Direccion</button></div>
-                <div class="opMen"><button  onclick="location.href = 'obsionmenu.html'" class="button">Alummnos</button></div>
-                <div class="opMen"><button  onclick="location.href = 'obsionmenu.html'" class="button">Multimedia</button></div>
-                <div class="opMen"><button  onclick="location.href = 'obsionmenu.html'" class="button">Actividades</button></div>
-                <div class="opMen"><button  onclick="location.href = 'obsionmenu.html'" class="button">AMPA</button></div>
+
+        <div class="d-flex flex-row col-12">
+            <div class="col-2 ">
+                <button type="button" class="col-12 btn btn-info" onclick="location.href = 'trabajos/index.html'" >Trabajos</button>
+                <button type="button" class="col-12 btn btn-info" onclick="location.href = 'obsionmenu.html'" >Inicio</button>
+                <button type="button" class="col-12 btn btn-info" onclick="location.href = 'obsionmenu.html'" >Jefatura</button>
+                <button type="button" class="col-12 btn btn-info" onclick="location.href = 'obsionmenu.html'" >Administración</button>
+                <button type="button" class="col-12 btn btn-info" onclick="location.href = 'obsionmenu.html'">Departamentos</button>
+                <button type="button" class="col-12 btn btn-info" onclick="location.href = 'obsionmenu.html'">Direccion</button>
+                <button type="button" class="col-12 btn btn-info" onclick="location.href = 'obsionmenu.html'" >Alummnos</button>
+                <button type="button" class="col-12 btn btn-info" onclick="location.href = 'obsionmenu.html'">Multimedia</button>
+                <button type="button" class="col-12 btn btn-info" onclick="location.href = 'obsionmenu.html'">Actividades</button>
+                <button type="button" class="col-12 btn btn-info" onclick="location.href = 'obsionmenu.html'">AMPA</button>
             </div>
-            <div class="col-7 centro">
-                
-                <div class="opMen Gm"><button  onclick="location.href = 'obsionmenu.html'" class="eleg eleg1">Grado medio</button></div>
-                <div class="opMen Eso"><button  onclick="location.href = 'obsionmenu.html'" class="eleg eleg2">ESO</button></div>
-                <div class="opMen Gs"><button  onclick="location.href = 'obsionmenu.html'" class="eleg eleg3">Grado superior</button></div>
-               
+            <div class="border border-dark col-7">
+                <div class=" row d-flex justify-content-start"><button  onclick="location.href = 'obsionmenu.html'" class="btn btn-warning col-5">Grado medio</button></div><br />
+                <div class=" row d-flex justify-content-center "><button  onclick="location.href = 'obsionmenu.html'" class="btn btn-primary col-5">ESO</button></div><br />
+                <div class=" row d-flex justify-content-end"><button  onclick="location.href = 'obsionmenu.html'" class="btn btn-danger col-5">Grado superior</button></div><br />
+
             </div>
-            <div class="col-3 derech">
-                <div class="col-12 usuContra">
+            <div class="col-3">
+                <div class="col-12">
                     <form action="/action_page.php">
                         <div>Usuario:</div> <input type="text" name="fname" value="Introduzca nombre" onfocus="this.value = ''">
                         <div>Contraseña:</div> <input type="text" name="lname" value="Introduzca contraseña" onfocus="this.value = ''">
                         <div><input type="submit" value="Submit"></div>
                     </form> 
                 </div>
-                <iframe class="col-12 map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.757743753542!2d-3.6974261486007043!3d40.369895679269305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226cdfefd6c59%3A0x5c599da87d0d06ff!2sIES+Enrique+Tierno+Galv%C3%A1n!5e0!3m2!1ses!2ses!4v1540792216357"
+                <iframe class="col-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.757743753542!2d-3.6974261486007043!3d40.369895679269305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226cdfefd6c59%3A0x5c599da87d0d06ff!2sIES+Enrique+Tierno+Galv%C3%A1n!5e0!3m2!1ses!2ses!4v1540792216357"
                         height="300" style="border:0" allowfullscreen></iframe>
 
             </div>
         </div>
-        <div class="col-12 carrusel">
+        <div class="col-12 d-flex flex-row ">
             <div class="col-2"></div>
-            <div class="col-7 carrDentro">
-                <div class="col-3 conFot">
-                    <img class="col-12 fotos" src="img/a.jpg" alt=""/>
-                    <img class="col-12 fotos" src="img/2.JPG" alt=""/>
+            <div class="col-7  d-flex flex-row">
+                <div class="col-4 ">
+                    <img class="col-12 fotos" src="img/a.jpg" alt="" />
                     <img class="col-12 fotos" src="img/foto1.jpg" alt=""/>
                     <img class="col-12 fotos" src="img/erasmus.PNG"  alt=""/>
                 </div>
-                <div class="col-3 conFot">             
-                    <img class="col-12 fotos2" src="img/2.JPG"  alt=""/>
+                <div class="col-4 ">             
                     <img class="col-12 fotos2" src="img/foto1.jpg"  alt=""/>
                     <img class="col-12 fotos2" src="img/erasmus.PNG"  alt=""/>
                     <img class="col-12 fotos2" src="img/a.jpg"  alt=""/>
                 </div>
-                <div class="col-3 conFot">             
-                    <img class="col-12 fotos3" src="img/foto1.jpg"  alt=""/>
+                <div class="col-4 ">     
                     <img class="col-12 fotos3" src="img/erasmus.PNG"  alt=""/>
                     <img class="col-12 fotos3" src="img/a.jpg"  alt=""/>
-                    <img class="col-12 fotos3" src="img/2.JPG"  alt=""/>
-                </div>
-                <div class="col-3">             
-                    <img class="col-12 fotos4" src="img/erasmus.PNG" alt=""/>
-                    <img class="col-12 fotos4" src="img/a.jpg" alt=""/>
-                    <img class="col-12 fotos4" src="img/2.JPG" alt=""/>
-                    <img class="col-12 fotos4" src="img/foto1.jpg" alt=""/>
-                </div>                
+                    <img class="col-12 fotos3" src="img/foto1.jpg"  alt=""/>
+                </div>             
                 <script>
                     var myIndex = 0;
                     var myIndey = 0;
@@ -98,7 +85,6 @@ and open the template in the editor.
                         var x = document.getElementsByClassName("fotos");
                         var y = document.getElementsByClassName("fotos2");
                         var z = document.getElementsByClassName("fotos3");
-                        var w = document.getElementsByClassName("fotos4");
                         for (i = 0; i < x.length; i++) {
                             x[i].style.display = "none";
                         }
@@ -108,13 +94,9 @@ and open the template in the editor.
                         for (i = 0; i < z.length; i++) {
                             z[i].style.display = "none";
                         }
-                        for (i = 0; i < w.length; i++) {
-                            w[i].style.display = "none";
-                        }
                         myIndex++;
                         myIndey++;
                         myIndez++;
-                        myIndew++;
                         if (myIndex > x.length) {
                             myIndex = 1;
                         }
@@ -124,23 +106,17 @@ and open the template in the editor.
                         if (myIndey > z.length) {
                             myIndez = 1;
                         }
-                        if (myIndew > z.length) {
-                            myIndew = 1;
-                        }
                         x[myIndex - 1].style.display = "block";
                         y[myIndey - 1].style.display = "block";
                         z[myIndey - 1].style.display = "block";
-                        w[myIndew - 1].style.display = "block";
                         setTimeout(carousel, 6000);
                     }
                 </script>
             </div>
             <div class="col-3"></div>
         </div>
-        <div class="menuFin">
-            <div class="fin">
-               Erick Jhoel Toledo De La A
-            </div>
+        <div class="d-flex flex-row-reverse bg-info text-white" >
+           Erick Jhoel Toledo De La A
         </div>
     </body>
 
