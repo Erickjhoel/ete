@@ -168,8 +168,9 @@ body{
 }
 .centro{
     border-radius: 15px;
-    border-color: green;
-    background-color: white;
+     background: url(../img/arbol.JPG) center ;
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
     margin-left: 1%;
 }
 .carrusel{
