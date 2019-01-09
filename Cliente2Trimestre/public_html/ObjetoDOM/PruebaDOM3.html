@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p id="parrafo1">Primer Parrafo</p>
+
+        <script>
+            //1 cree un nodo o un elemento de tipo texto con el texto introducido por teclado
+            //2 crear un nodo de tipo parrafo(elemento)
+            //3 hacer el texto hijo del parrafo 
+            //4 añadir el parrafo creado a continuacion del parrafo existente en el boddy 
+            var mi_parrafo= document.createElement("p");
+            var mi_texto=prompt("Introduce el texto");
+            //primer hijo
+            var objeto_hijo = objeto_html.firstChild;
+            document.write("nodeName: " + objeto_hijo.nodeName + "<br />");
+            //ultimo hijo
+            var objeto_hijo = objeto_html.lastChild;
+            document.write("nodeName: " + objeto_hijo.nodeName + "<br />");
+        </script> 
+    </body>
+</html>
