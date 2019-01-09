@@ -16,16 +16,17 @@ and open the template in the editor.
         <script>
             //1 cree un nodo o un elemento de tipo texto con el texto introducido por teclado
             //2 crear un nodo de tipo parrafo(elemento)
+
+
+            var mi_parrafo = document.createElement("p");
+            var texto_introducido = prompt("Introduce el texto");
+            var mi_texto = document.createTextNode(mi_texto);
             //3 hacer el texto hijo del parrafo 
+            mi_parrafo.appendChild(mi_texto);
+
             //4 añadir el parrafo creado a continuacion del parrafo existente en el boddy 
-            var mi_parrafo= document.createElement("p");
-            var mi_texto=prompt("Introduce el texto");
-            //primer hijo
-            var objeto_hijo = objeto_html.firstChild;
-            document.write("nodeName: " + objeto_hijo.nodeName + "<br />");
-            //ultimo hijo
-            var objeto_hijo = objeto_html.lastChild;
-            document.write("nodeName: " + objeto_hijo.nodeName + "<br />");
+            document.write("nodeName: " + mi_parrafo+ "<br />");
+            
         </script> 
     </body>
 </html>
