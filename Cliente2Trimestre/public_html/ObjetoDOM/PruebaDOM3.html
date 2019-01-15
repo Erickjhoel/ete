@@ -11,12 +11,14 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <button onclick="agregarParrafo()">Agregar texto</button>
+        <button onclick="agregarParrafo()">Agregar texto al principio</button>
         <button onclick="eliminar()">Eliminar texto</button>
+        <button onclick="agregarParrafoDespues()">Agregar texto Al final</button>
         <div id="Padre">
             <p id="parrafo1">Primer Parrafo</p>
         </div>
-
+        //ahora hay que crear una paguina que tenga en el body una etiqueta img
+          tener preparado una imagen 
 
         <script>
 
@@ -28,18 +30,25 @@ and open the template in the editor.
                 var mi_texto = document.createTextNode("El texto introducido es: (" + texto_introducido + ")");
                 //3 hacer el texto hijo del parrafo 
                 mi_parrafo.appendChild(mi_texto);
-
                 //4 añadir el parrafo creado a continuacion del parrafo existente en el boddy 
-                var nodoAnterior = document.getElementById("parrafo1");
-
                 var list = document.getElementById("Padre");
                 list.insertBefore(mi_parrafo, list.childNodes[0]);
-
-                document.body.appendChild(parentDiv);//para mostrarlo por pantalla
+            }
+            function agregarParrafoDespues() {
+                //1 cree un nodo o un elemento de tipo texto con el texto introducido por teclado
+                //2 crear un nodo de tipo parrafo(elemento)
+                var mi_parrafo = document.createElement("P");
+                var texto_introducido = prompt("Introduce el texto");
+                var mi_texto = document.createTextNode("El texto introducido es: (" + texto_introducido + ")");
+                //3 hacer el texto hijo del parrafo 
+                mi_parrafo.appendChild(mi_texto);
+                document.getElementById("Padre").appendChild(mi_parrafo);
+                
             }
             function eliminar() {
                 var list = document.getElementById("Padre");
-                list.removeChild(list.childNodes[0]);
+                var posicion=parseInt(prompt("Introduzca la posicion a eliminar",0));
+                list.removeChild(list.childNodes[posicion]);
             }
 
 
