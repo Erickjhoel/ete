@@ -17,7 +17,10 @@ and open the template in the editor.
         <div id="Padre">
             <p id="parrafo1">Primer Parrafo</p>
         </div>
-        
+        //nuevo ejercicio añadirle el boton modificar parrafo :)
+        //saber generar un array sin problemas:)
+        //manipular tablas()añadir filas o culumnas, modificar el contenido, eliiminar filas o columnas
+
 
         <script>
 
@@ -42,11 +45,11 @@ and open the template in the editor.
                 //3 hacer el texto hijo del parrafo 
                 mi_parrafo.appendChild(mi_texto);
                 document.getElementById("Padre").appendChild(mi_parrafo);
-                
+
             }
             function eliminar() {
                 var list = document.getElementById("Padre");
-                var posicion=parseInt(prompt("Introduzca la posicion a eliminar",0));
+                var posicion = parseInt(prompt("Introduzca la posicion a eliminar", 0));
                 list.removeChild(list.childNodes[posicion]);
             }
 
