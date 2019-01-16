@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+ahora hay que crear una paguina que tenga en el body una etiqueta img
+tener preparado una imagen 
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            window.onload = function () {
+                //**********************imagen utilizando setAttributeNode
+                var imagen = document.getElementById("im");
+                var att = document.createAttribute("src");
+                att.value = "RHM.jpg";//tambien funciona con .nodeValue
+                imagen.setAttributeNode(att);
+                //**********************imagen utilizando setAttribute
+                var imagen2 = document.getElementById("im2");
+                imagen2.setAttribute("src", "RHM.jpg");
+
+                //**********************Crear imagen  desde cero 
+                var mi_etiqueta = document.createElement("img");
+                //añadir atributo src
+                var atributo1 = document.createAttribute("src");
+                atributo1.value = "RHM.jpg";
+                mi_etiqueta.setAttributeNode(atributo1);
+                //añadir atributo width
+                var atributo2 = document.createAttribute("width");
+                atributo2.value = "400";
+                mi_etiqueta.setAttributeNode(atributo2);
+                document.body.appendChild(mi_etiqueta);
+
+            };
+
+        </script>
+    </head>
+    <body>
+        <h2>Imagen añadiendo el src (con setAttributeNode)</h2>
+        <img id="im"  alt="" width="400"/><br />
+        <h2>Imagen añadiendo el src (con setAttribute)</h2>
+        <img id="im2"  alt="" width="400"/><br />
+        <h2>Imagen creada desde cero</h2>
+    </body>
+</html>
