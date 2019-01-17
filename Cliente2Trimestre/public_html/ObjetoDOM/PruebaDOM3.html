@@ -14,9 +14,8 @@ and open the template in the editor.
         <button onclick="agregarParrafo()">Agregar texto al principio</button>
         <button onclick="eliminar()">Eliminar texto</button>
         <button onclick="agregarParrafoDespues()">Agregar texto Al final</button>
-        <div id="Padre">
-            <p id="parrafo1">Primer Parrafo</p>
-        </div>
+        <button onclick="modificar()">Modificar texto</button>
+        <div id="Padre"><p>Primer Parrafo</p></div>
         //nuevo ejercicio añadirle el boton modificar parrafo :)
         //saber generar un array sin problemas:)
         //manipular tablas()añadir filas o culumnas, modificar el contenido, eliiminar filas o columnas
@@ -50,7 +49,22 @@ and open the template in the editor.
             function eliminar() {
                 var list = document.getElementById("Padre");
                 var posicion = parseInt(prompt("Introduzca la posicion a eliminar", 0));
-                list.removeChild(list.childNodes[posicion]);
+                if (posicion > 0) {
+                    list.removeChild(list.childNodes[posicion - 1]);
+                } else {
+                    alert("Posicion incorrecta");
+                }
+
+            }
+            function modificar() {
+                var list = document.getElementById("Padre");
+                var posicion = parseInt(prompt("Introduzca la posicion que desea modificar", 0));
+                if (posicion > 0) {
+                    var texto_introducido = prompt("Introduce el texto nuevo ");
+                    list.childNodes[posicion - 1].innerHTML = texto_introducido;
+                } else {
+                    alert("Posicion incorrecta");
+                }
             }
 
 

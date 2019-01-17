@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            td{
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <button onclick="CrearTabla()">Crear Tabla</button>
+        <table border="1" id="Padre">
+
+        </table>
+        <script>
+
+            var arrayFilas = new Array();
+            var arrayColumnas = new Array();
+            function CrearTabla() {
+                var filas = parseInt(prompt("Introduzca El numero de filas de la tabla", 0));
+                var columnas = parseInt(prompt("Introduzca El numero de columnas de la tabla", 0));
+                for (var i = 0; i < filas; i++) {
+                    var mi_tr = document.createElement("tr");
+                    arrayFilas[i] = mi_tr;
+                    for (var e = 0; e < columnas; e++) {
+                        var mi_td = document.createElement("td");
+                        arrayColumnas[e] = mi_td;
+                        arrayFilas[i].appendChild(arrayColumnas[e]);
+                        document.getElementById("Padre").appendChild(arrayFilas[i]);
+                        var dato = prompt("Introduzca el dato de la posicion" + i + "-" + e, "(" + i + ")(" + e + ")");
+                        var mi_texto = document.createTextNode(dato);
+                        mi_td.appendChild(mi_texto);
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
