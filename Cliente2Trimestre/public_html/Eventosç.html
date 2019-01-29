@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #yayo{
+                background-color: red;
+                padding: 10%;
+            }
+            #papa{
+                background-color: green; 
+                padding: 10%;
+            }
+            #hijo{
+                background-color: yellow;
+                padding: 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="yayo">
+            holis soy el yayo 
+            <div id="papa">
+                holis soy el papa 
+                <div id="hijo">
+                    <a id="enlace" href="https://www.google.com/">Señor enlace</a>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+
+            document.addEventListener("readystatechange", cargarEventos, false);
+            function cargarEventos() {
+                if (document.readyState === "complete") {
+                    document.getElementById("hijo").addEventListener("click", mostrarinfohijo, true);
+                    document.getElementById("papa").addEventListener("click", mostrarinfoPadre, true);
+                    document.getElementById("yayo").addEventListener("click", mostrarinfoYayo, true);
+                    document.getElementById("hijo").addEventListener("click", cambiaFondo, false);
+                    document.getElementById("papa").addEventListener("click", cambiaFondo, false);
+                    document.getElementById("yayo").addEventListener("click", cambiaFondo, false);
+                }
+            }
+            function mostrarinfohijo() {
+                alert("has pulsado el enlace");
+                document.getElementById("enlace").addEventListener("click", function (event) {
+                    event.preventDefault();
+                });
+            }
+            function cambiaFondo(event) {
+                event.target.style.background = 'blue';
+            }
+            ;
+
+
+            function mostrarinfoPadre() {
+                alert("Soy el papa");
+            }
+            function mostrarinfoYayo() {
+                alert("Soy el yayo");
+            }
+        </script>
+    </body>
+</html>
