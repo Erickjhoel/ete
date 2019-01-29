@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <button onclick="CrearCoockie()">Crear cookie</button>
+            <button onclick="EliminarCoockie()">Eliminar cookie</button>
+            <button onclick="ConsultarCoockie()">Consultar cookie</button>
+            <button onclick="ModificarCoockie()">Modificar cookie</button>
+            <button onclick="ListadoCoockie()">Listado cookies</button>
+            <button onclick="EliminarTodasCoockie()">Eliminar todas las cookies</button>
+        </div>
+        <script>
+          /*  var cookie = window.localStorage.getItem(window.localStorage.key('contador'));
+            var contadorsuma = parseInt(cookie) + 1;
+            window.localStorage.setItem("contador", contadorsuma);
+            document.write("Contador:" + contadorsuma + "<br />");*/
+
+            function CrearCoockie() {
+                var nombre = prompt("Introduzca nombre de la cookie");
+                var valor = prompt("Introduzca el valor de la cookie" + nombre);
+                window.localStorage.setItem(nombre, valor);
+                alert("Coockie creada");
+            }
+
+            //Para mostrar todas las coockies
+            //for (var i = 0; i < window.localStorage.length; i++) {
+           //     document.write(window.localStorage.key(i) + ".-");
+            //    document.write(window.localStorage.getItem(window.localStorage.key(i)) + "<br />");
+           // }
+
+
+        </script>
+    </body>
+</html>
