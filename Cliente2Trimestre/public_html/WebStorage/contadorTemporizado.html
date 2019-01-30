@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h3>Contador Temporizado</h3>
+        <button onclick="contador()">Refrescar Paguina</button>
+        <script>
+            function contador() {
+                var fecha= new Date();
+                var mili = fecha.getTime();
+                if (mili<Number(localStorage.getItem("expira"))) {
+                    var cookie = window.localStorage.getItem(window.localStorage.key('contador'));
+                    var contadorsuma = parseInt(cookie) + 1;
+                    window.localStorage.setItem("contador", contadorsuma);
+                    document.write("Contador:" + contadorsuma + "<br />");
+                    window.localStorage.setItem("expira", (mili+(3000)));
+                } else {
+                    window.localStorage.setItem("contador", 0);
+                    var cookie = window.localStorage.getItem(window.localStorage.key('contador'));
+                    var contadorsuma = parseInt(cookie) + 1;
+                    window.localStorage.setItem("contador", contadorsuma);
+                    window.localStorage.setItem("expira", (mili+(3000)));
+                    document.write("Contador:" + contadorsuma + "<br />");
+                }
+            }
+        </script>
+    </body>
+</html>
