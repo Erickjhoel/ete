@@ -1,0 +1,1 @@
+{"version":3,"sources":["prueba1.less"],"names":[],"mappings":"AAIA;EACI,yBAAA;EACA,eAAA","sourcesContent":["\n@nice-blue: #5B83AD;\n@light-blue: @nice-blue + #111;\n@font-face:50px;\nbody {\n    background-color:@light-blue;\n    font-size: @font-face;\n}"]}

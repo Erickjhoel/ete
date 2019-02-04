@@ -1,0 +1,23 @@
+{
+	"files": {
+		"prueba1.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "prueba1.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourceMap": true
+					}
+				}
+			],
+			"sources": [
+				"prueba1.less"
+			]
+		}
+	}
+}
